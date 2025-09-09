@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "generateDoc": "node swagger.js"
+    "generateDoc": "node swagger.js",
+    "test-apis": "node test-apis.js"
   },
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.9",
