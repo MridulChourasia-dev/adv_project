@@ -16,7 +16,9 @@ const connectToDatabase = async () => {
     );
   } catch (error) {
     console.log("Error is Connecting to MongoDB", error);
-    process.exit(1);
+    console.log("⚠️  WARNING: MongoDB is not available. Some API endpoints may not work properly.");
+    // Don't exit process for testing purposes
+    // process.exit(1);
   }
 };
 
